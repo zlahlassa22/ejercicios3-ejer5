@@ -3,9 +3,9 @@ package Empresa;
 public class MobilePhone {
     private String numero;
     private int bateria;
-    MobilePhone(String nu, int b){
+    MobilePhone(String nu, int bat){
         numero=nu;
-        bateria=b;
+        bateria=bat;
     }
     String getNumero(){
         return numero;
