@@ -3,8 +3,8 @@ package Empresa;
 public class MobilePhone {
     private String numero;
     private int bateria;
-    MobilePhone(String n, int b){
-        numero=n;
+    MobilePhone(String nu, int b){
+        numero=nu;
         bateria=b;
     }
     String getNumero(){
