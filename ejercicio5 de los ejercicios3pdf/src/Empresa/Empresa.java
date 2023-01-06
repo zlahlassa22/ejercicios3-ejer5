@@ -2,7 +2,7 @@ package Empresa;
 
 public class Empresa {
      String nombre;
-     int ganancia;
+    int ganancia;
     Empleado jefe;
     Empleado gerente;
     Empresa(String n, int g,Empleado j){
@@ -19,8 +19,8 @@ public class Empresa {
         ganancia=ganancia+100;
 
     }
-    void mostrar(){
-        System.out.println(nombre+" "+ganancia+" "+jefe+" "+gerente);
+    public String toString() {
+        return "Nombre: " + nombre + ", Ganancia: " + ganancia + ", Jefe: " + jefe + ", Gerente: " + gerente;
     }
 
 
