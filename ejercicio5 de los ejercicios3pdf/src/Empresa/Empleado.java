@@ -33,5 +33,8 @@ public class Empleado extends Persona {
        mp.usar();
        ganardinero(+10);
     }
+    public String toString() {
+        return super.toString() + ", Dinero: " + dinero + ", Bateria: " + mp.getBateria();
+    }
 
 }
