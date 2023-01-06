@@ -32,6 +32,9 @@ public class Persona {
         nombypeso=nombre+peso;
 
     }
+    public String toString() {
+        return "Nombre: " + nombre + ", DNI: " + DNI + ", Altura: " + altura + ", Peso: " + peso;
+    }
 
 
 }
