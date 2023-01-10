@@ -7,9 +7,20 @@ public class MobilePhone {
         numero=nu;
         bateria=bat;
     }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
+    public void setBateria(int bateria) {
+        this.bateria = bateria;
+    }
+
+
     String getNumero(){
         return numero;
     }
+
     int getBateria(){
         return bateria;
     }
