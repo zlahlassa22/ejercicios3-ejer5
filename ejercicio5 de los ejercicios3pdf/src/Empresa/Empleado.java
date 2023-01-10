@@ -1,8 +1,8 @@
 package Empresa;
 
 public class Empleado extends Persona {
-    int dinero;
-    MobilePhone mp;
+    private int dinero;
+    private MobilePhone mp;
 
     Empleado(String n, String d, int a, int p,int din, MobilePhone mp) {
         super(n, d, a, p);
@@ -10,6 +10,22 @@ public class Empleado extends Persona {
         this.mp=mp;
 
     }
+    public void setDinero(int dinero){
+        this.dinero=dinero;
+    }
+
+    public void setMp(MobilePhone mp) {
+        this.mp = mp;
+    }
+
+    public MobilePhone getMp() {
+        return mp;
+    }
+
+    public int getDinero() {
+        return dinero;
+    }
+
 
     void ganardinero(int mas){
         if (mas>0){
@@ -24,10 +40,6 @@ public class Empleado extends Persona {
         }else{
             System.out.println("ERROR , INGRESA UN NUMERO MENOR QUE 0");
         }
-    }
-    void nombreypeso(){
-        super.nombreypeso();
-        System.out.println(dinero+" "+mp.getBateria());
     }
     void trabajar(){
        mp.usar();
