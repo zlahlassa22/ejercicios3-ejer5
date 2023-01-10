@@ -14,6 +14,22 @@ public class Persona {
     Persona(String d){
 
     }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setDNI(String DNI) {
+        this.DNI = DNI;
+    }
+
+    public void setAltura(int altura) {
+        this.altura = altura;
+    }
+
+    public void setPeso(int peso) {
+        this.peso = peso;
+    }
+
     String getnombre(){
         return nombre;
     }
@@ -26,14 +42,8 @@ public class Persona {
     int getPeso(){
         return peso;
     }
-    void nombreypeso(){
-        String nombypeso;
-        System.out.println(nombre+" "+peso);
-        nombypeso=nombre+peso;
-
-    }
     public String toString() {
-        return "Nombre: " + nombre + ", DNI: " + DNI + ", Altura: " + altura + ", Peso: " + peso;
+        return "Nombre: " + getnombre() + ", DNI: " + getDNI() + ", Altura: " + getAltura() + ", Peso: " + getPeso();
     }
 
 
